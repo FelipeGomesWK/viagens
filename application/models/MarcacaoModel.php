@@ -1,8 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-namespace application\models;
-
-class MarcaModel {
+class MarcacaoModel  extends CI_Model {
 
 	private $marcacao_id;
 	private $fk_tipo_marcacao_id;
@@ -46,7 +45,7 @@ class MarcaModel {
 
 	public function setLatLong($latLong) {
 
-		$this->lat_long = $latLong;
+		$this->lat_long = "POINT(".$latLong.")";
 	}
 	
 }

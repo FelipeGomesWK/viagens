@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class MarcacaoModel
+class MarcacaoModel extends CI_Model
 {
     var $marcacao_id;
     var $fk_trajeto_id;
